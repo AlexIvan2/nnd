@@ -1,4 +1,19 @@
 # IntelliJ project files
-.idea
 *.iml
 target/
+
+#### IntelliJ IDEA dir config ####
+/.idea/
+/idea/
+
+#### IntelliJ IDEA out folder (compilation folder) ####
+/.out/
+/out/
+
+#### IntelliJ IDEA out folder (compilation folder) ####
+/.build/
+/build/
+
+#### IntelliJ IDEA out folder (compilation folder) ####
+/.gradle/
+/gradle/

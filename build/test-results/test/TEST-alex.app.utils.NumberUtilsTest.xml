@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="alex.app.utils.NumberUtilsTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-10-30T09:36:15" hostname="Alex-PC" time="0.001">
-  <properties/>
-  <testcase name="clearAllButDigits" classname="alex.app.utils.NumberUtilsTest" time="0.001"/>
-  <testcase name="removeArtifacts" classname="alex.app.utils.NumberUtilsTest" time="0.0"/>
-  <testcase name="removeDoubleZeroPrefix" classname="alex.app.utils.NumberUtilsTest" time="0.0"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
