@@ -13,3 +13,6 @@ target/
 #### IntelliJ IDEA build folder (compilation folder) ####
 /.build/
 /build/
+
+#### IntelliJ IDEA build folder (compilation folder) ####
+/.gradle/
