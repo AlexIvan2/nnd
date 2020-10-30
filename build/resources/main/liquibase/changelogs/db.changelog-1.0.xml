@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="1" author="alex" context="main">
+        <createSequence sequenceName="country_code_seq"/>
+    </changeSet>
+    <changeSet id="2" author="alex" context="main">
+        <createSequence sequenceName="hibernate_sequence"/>
+    </changeSet>
+
+    <changeSet id="3" author="alex" context="main">
+        <createTable tableName="COUNTRY_CODE">
+            <column name="ID" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+
+            <column name="CODE" type="VARCHAR(50)">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="COUNTRY" type="VARCHAR(50)">
+                <constraints nullable="false"/>
+            </column>
+
+        </createTable>
+    </changeSet>
+
+<!--    <changeSet id="3" author="alex" context="main">-->
+<!--        <preConditions>-->
+<!--            <tableExists tableName="COUNTRY_CODE"/>-->
+<!--        </preConditions>-->
+<!--        <sql>-->
+<!--            INSERT INTO COUNTRY_CODE (CODE, COUNTRY) VALUES ;-->
+<!--        </sql>-->
+<!--    </changeSet>-->
+
+<!--    <changeSet id="4" author="alex" context="main">-->
+<!--        <insert tableName="orders">-->
+<!--            <column name="MSISDN" value="371123456789"/>-->
+<!--            <column name="ROUTING_NUMBER" value="11111"/>-->
+<!--            <column name="ACTIVATION_DATE" value="2017-09-01"/>-->
+<!--            <column name="VERSION" value="1"/>-->
+<!--            <column name="CREATED_AT" value="now()"/>-->
+<!--        </insert>-->
+<!--    </changeSet>-->
+
+<!--    <changeSet id="5" author="alex" context="main">-->
+<!--        <insert tableName="orders">-->
+<!--            <column name="MSISDN" value="371987654321"/>-->
+<!--            <column name="ROUTING_NUMBER" value="22222"/>-->
+<!--            <column name="ACTIVATION_DATE" value="2017-09-01"/>-->
+<!--            <column name="VERSION" value="1"/>-->
+<!--            <column name="CREATED_AT" value="now()"/>-->
+<!--        </insert>-->
+<!--    </changeSet>-->
+
+<!--    <changeSet id="6" author="alex" context="main">-->
+<!--        <insert tableName="orders">-->
+<!--            <column name="MSISDN" value="371298060897"/>-->
+<!--            <column name="ROUTING_NUMBER" value="99999"/>-->
+<!--            <column name="ACTIVATION_DATE" value="2017-12-01"/>-->
+<!--            <column name="VERSION" value="1"/>-->
+<!--            <column name="CREATED_AT" value="now()"/>-->
+<!--        </insert>-->
+<!--    </changeSet>-->
+
+
+</databaseChangeLog>
