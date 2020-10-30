@@ -10,10 +10,6 @@ target/
 /.out/
 /out/
 
-#### IntelliJ IDEA out folder (compilation folder) ####
+#### IntelliJ IDEA build folder (compilation folder) ####
 /.build/
 /build/
-
-#### IntelliJ IDEA out folder (compilation folder) ####
-/.gradle/
-/gradle/
