@@ -7,16 +7,18 @@ module.controller("CountryController", ["$scope", "CountryService", "PHONE_NUMBE
         var init = function () {
             $scope.phoneNumber;
             $scope.country = null;
+            $scope.status = null;
             $scope.phoneNumberPattern = PHONE_NUMBER_PATTERN;
         };
 
         $scope.countryCheck = function () {
             if ($scope.myForm.$invalid) {
-                alert($scope.phoneNumber + "is invalid phone number!");
+                alert("invalid phone number!");
                 event.preventDefault();
             } else {
                 CountryService.getCountryByPhoneNumber($scope.phoneNumber).then(function (valueResult) {
                     $scope.country = valueResult.data.countryCode;
+                    $scope.status = valueResult.data.status;
                     console.log(valueResult);
                 }, function (reason) {
                     console.log("error occurred:" + reason);

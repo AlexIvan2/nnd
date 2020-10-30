@@ -2,8 +2,7 @@
 
 ## Requirements
 1. Java 8  ```java -version``` 
-1. Gradle 6.6 (If you use Intellij 2018v you might have a problem with Gradle 6.6 version)
-Use ```gradlew wrapper``` to switch to the 5.6.4 version
+1. Gradle 5.6.4 (Wrapper included in the project just in case)
 
 
 ## How to run 
